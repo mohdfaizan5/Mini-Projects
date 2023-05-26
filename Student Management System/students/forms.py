@@ -1,21 +1,21 @@
 from django import forms
 
-# CHOICES = [
-#     ("male", "MALE"),
-#     ("female", "male"),
-# ]
-
 CHOICES = [
-    "male"
+    ("male", "MALE"),
+    ("female", "male"),
 ]
 
+# CHOICES = [
+#     "male"
+# ]
+
 class AddForm(forms.Form):
-    first_name = forms.CharField(label="First Name", max_length=64) #, widget=forms.Textarea(attrs={"class":"form-sml"}))
-    last_name = forms.CharField(label="Last Name", max_length=64)
-    email = forms.EmailField(label="Email", max_length=64)
-    gpa = forms.FloatField(label="GPA", max_value=10.0, min_value=0.0)
-    subject = forms.CharField( max_length=65, required=False)
-    gender = forms.CharField( max_length=65, required=False)
+    usn_number = forms.CharField(label="",max_length=10, widget=forms.Textarea(attrs={"class":"shadow form-control mr-05 ml-03","columns":"5", "rows":"1","placeholder":"USN number","name":""})) #, widget=forms.Textarea(attrs={"class":"form-sml"}))
+    name = forms.CharField(label="", max_length=64, widget=forms.Textarea(attrs={"class":"shadow form-control mr-05 ml-03","columns":"5", "rows":"1","placeholder":"Name","name":""}))
+    email = forms.EmailField(label="", max_length=64, widget=forms.EmailInput(attrs={"class":"shadow form-control", "type":"email", "id":"email-1", "name":"email", "placeholder":"Email"}))
+    gpa = forms.FloatField(label="", max_value=10.0, min_value=0.0, widget=forms.NumberInput(attrs={"class":"shadow form-control", "placeholder":"gpa" }))
+    subject = forms.CharField(label="", max_length=65, required=False,widget=forms.Textarea(attrs={"class":"shadow form-control mr-05 ml-03","columns":"5", "rows":"1","placeholder":"Subject","name":""}))
+    gender = forms.ChoiceField(label="", required=False ,choices=CHOICES, widget=forms.Textarea(attrs={"class":"shadow form-control mr-05 ml-03","columns":"5", "rows":"1","placeholder":"Gender","name":""})) #[("MALE","MALE"), ("FEMALE", "FEMALE")])
 
     # gender = forms.ChoiceField( choices=["male", "femla"], required=False)
     # gender = forms.CharField(max_length=100, choices=CHOICES, null=True)
