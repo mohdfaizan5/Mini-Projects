@@ -4,6 +4,15 @@
 &nbsp;
 ## Languages, Frameworks and Tools used:
 
+<!-- <p align="left">
+<img href="google.com" src="https://user-images.githubusercontent.com/79694828/230014332-40078db9-dcdb-4403-8e58-cfbe8572a89b.png" width="60" height="60" />
+<!-- <img href="google.com" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="60" height="60" />
+
+<p align="left">
+<img href="google.com" src="https://user-images.githubusercontent.com/79694828/230014332-40078db9-dcdb-4403-8e58-cfbe8572a89b.png" width="60" height="60" />
+<!-- <img href="google.com" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="60" height="60" />
+
+.. -->
 
 &nbsp;
 ## Project contains
