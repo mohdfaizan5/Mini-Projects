@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Url Shortner</title>
+    <link rel="stylesheet" type='text/css' href="{% static 'index.css' %}"/>
+    {% comment %} <link rel="stylesheet" type="text/css" href="C:\Users\LAB9COMP27\Documents\python\Mini-Projects\urlShortner\main\templates\main\index.css" />  {% endcomment %}
+  
+  </head>
+
+  <body>
+    <h1>Url Shortner</h1>
+
+    <form method="post" >
+      {% csrf_token %}
+      <input placeholder="Enter url ">
+      <button type="submit" action="{% url 'shorten' %}">Shortern</button>
+    </form>
+
+  <p>
+    {% if uuid %}
+    bit.ly/{{ uuid}}
+    {% endif %}
+
+  </p>
+  </body>
+
+</html>
