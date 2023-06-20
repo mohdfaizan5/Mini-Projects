@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .chemistry{
+      width: 90px;
+      height: 90px;
+      margin-bottom: 0px;
+      transition: cursor 0.5s;
+    }
+    .chemistry:hover{
+      cursor: pointer;
+    }
+    .chem-p{
+      margin: 3px;
+      font-size: 20px;
+    }
+    .head{
+      display: block;
+      text-align: center;
+      font-size: 80px;
+    }
+    .line-1{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-decoration:underline;
+    }
+    .row-1{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .chemistry_logo2{
+      text-align: center;
+    }
+    .button_style{
+      background-color:rgba(250, 235, 215, 0.726);
+      border-radius: 11px;
+      padding: 9px;
+      transition: border-style 0.5s;
+    }
+    .button_style:hover{
+      border-style:dashed;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.233);
+    }
+    .button_style:active{
+      border-style:hidden;
+      background-color: transparent;
+    }
+  </style>
+</head>
+    <body>
+      <div class="head">
+        <p class="line-1">EDU-HUB</p>
+        <p class="line-1">CHEMISTRY-CYCLE</p>
+      </div>
+      <div class="row-1">
+        <div class="chemistry_logo">
+          <button class="button_style"><img class="chemistry" src="chemistry.png" alt="..."></button>
+          <p class="chem-p"><strong>CHEMISTRY</strong></p>
+        </div>
+        <div class="chemistry_logo">
+         <button class="button_style"><img class="chemistry" src="calculating.png" alt="..."></button>
+          <p class="chem-p"><strong>MATHEMATICS</strong></p>
+        </div>
+      </div>
+      <div class="row-1">
+        <div class="chemistry_logo">
+          <button class="button_style"><img class="chemistry" src="electrical-circuit.png" alt="..."></button>
+          <p class="chem-p"><strong>IEE</strong></p>
+        </div>
+        <div class="chemistry_logo">
+          <button class="button_style"><img class="chemistry" src="geometry.png" alt="..."></button>
+          <p class="chem-p"><strong>CAED</strong></p>
+        </div>
+      </div>
+      <div class="row-1">
+        <div class="chemistry_logo">
+          <button class="button_style"><img class="chemistry" src="eng.png" alt="..."></button>
+          <p class="chem-p"><strong>ENGLISH</strong></p>
+        </div>
+        <div class="chemistry_logo">
+          <button class="button_style"><img class="chemistry" src="images.jpeg" alt="..."></button>
+          <p class="chem-p"><strong>KANNADA</strong></p>
+        </div>
+      </div>
+      <div class="chemistry_logo2">
+       <button class="button_style"><img class="chemistry" src="healthcare.png" alt="..."></button>
+        <p class="chem-p"><strong>SFH</strong></p>
+      </div>
+    </body>
+</html>
