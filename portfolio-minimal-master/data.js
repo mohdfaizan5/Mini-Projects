@@ -1,7 +1,7 @@
 const main = {
   name: 'Mohammed Faizan',
   mail: 'mohdfaizan13123@gmail.com',
-  img: 'https://www.dropbox.com/s/6dwo8zvql8r19h8/IMG_20211127_003913_002.jpg?dl=0',
+  img: 'https://avatars.githubusercontent.com/u/79694828?v=4',
   // img: 'https://organicthemes.com/demo/profile/files/2018/05/profile-pic.jpg',
   role: ['Full Stack Developer'],
   // Refer https://ionicons.com/ and put the icon name inside iconName key

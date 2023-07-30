@@ -14,13 +14,13 @@
 
     <form method="post" >
       {% csrf_token %}
-      <input placeholder="Enter url ">
-      <button type="submit" action="{% url 'shorten' %}">Shortern</button>
+      <input placeholder="Enter url " id="url" name="url">
+      <button type="submit" action="{% url 'index' %}">Shortern</button>
     </form>
 
   <p>
     {% if uuid %}
-    bit.ly/{{ uuid}}
+    shorten.ly/{{ uuid}}
     {% endif %}
 
   </p>

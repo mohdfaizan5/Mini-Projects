@@ -4,5 +4,5 @@ from . import views
 urlpatterns = [
     # Let this be the default home page
     path("", views.index, name="index"),
-    path("shorten", views.shorten, name="shorten"),
+    # path("shorten", views.shorten, name="shorten"),
 ]
